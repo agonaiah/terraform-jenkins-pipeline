@@ -1,13 +1,15 @@
 variable "aws_access_key" {
     description = "AWS Access Key"
+    default = "AKIATLJ6TN7ENZYDD3PI"
 }
 
 variable "aws_secret_key" {
     description = "AWS Secret Key"
+    default = "aq5VCcjHTwEQAe72kZJQsE1Y+XOHX8+0H83GwwGT"
 }
 
 variable "aws_session_token" {
-    description = "AWS Session Token"
+   description = "AWS Session Token"
 }
 
 variable "aws_region" {
@@ -17,35 +19,42 @@ variable "aws_region" {
 
 variable "key_pair" {
     description = "Key pair used to login to the instance"
+    default  = "tfc-poc-key"
 }
 
 variable "instance_type" { 
     description = "Instance type for the Jenkins server"
-    default = "t3.medium"
+    default = "t2.micro"
 }
 
 variable "tfe_api_token" {
     description = "The token used for Jenkins to interact with TFE"
+    default = "iVVK3eZUbmOkGQ.atlasv1.S1e4rRRL7uHrUcMygWMfGwgiwbTqYYznzVm8CTQjNW5q7GCDlNyHW5IccZDqycffl6I"
 }
 
 variable "bucket" {
     description = "The bucket used for accessing artifacts"
+    default = "tfc-state"
 }
 
 variable "org_name" {
     description = "The name of the TFE Organization"
+    default = "example-org-e989a3"
 }
 
 variable "workspace_name" {
     description = "The name of the TFE workspace"
+    default = "terraform-jenkins-config"
 }
 
 variable "prefix" {
     description = "Unique prefix for naming"
+    default = "tfc"
 }
 
 variable "owner" {
     description = "Email address of the person running this configuration"
+    default = "gonaiah.aare@gmail.com"
 }
 
 variable "hc_region" {
