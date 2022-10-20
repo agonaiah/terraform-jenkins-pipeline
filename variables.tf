@@ -1,16 +1,17 @@
 variable "aws_access_key" {
     description = "AWS Access Key"
-    default = "AKIATLJ6TN7ENZYDD3PI"
+    default = "ASIATLJ6TN7EFBX462TK"
 }
 
 variable "aws_secret_key" {
     description = "AWS Secret Key"
-    default = "aq5VCcjHTwEQAe72kZJQsE1Y+XOHX8+0H83GwwGT"
+    default = "t/hT/bLXRtbW0BOTjZC/q2HlI1Q6f4t1DeqQ2TPa"
 }
 
-#variable "aws_session_token" {
- #  description = "AWS Session Token"
-#}
+variable "aws_session_token" {
+   description = "AWS Session Token"
+    default = "FwoGZXIvYXdzEJv//////////wEaDHyc3rteXO+75kvhVCKBASb68dD6zMw1SB3DTSmCPhs5/lSt7eKCyDTpC/q/f0afY1T7LgZahHaM3YRmm8oseDNG+rPI68AlJTGLFO9OcRhdlfhJvnNEVywalQAjMNavgnoNrzpr89cyrJooSWOovbPO8RyD+mlt5x7uItafHwqAAhXO5Y3No6144PKQ12/q3CjQisaaBjIoaCSIAnrYBExdQ2mvk1fylojdm5O0h+xo8J/9bfKLfIGCO0Dzx9Dzvw=="
+}
 
 variable "aws_region" {
     description = "AWS Region"
