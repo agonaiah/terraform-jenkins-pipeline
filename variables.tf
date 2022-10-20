@@ -8,9 +8,9 @@ variable "aws_secret_key" {
     default = "aq5VCcjHTwEQAe72kZJQsE1Y+XOHX8+0H83GwwGT"
 }
 
-variable "aws_session_token" {
-   description = "AWS Session Token"
-}
+#variable "aws_session_token" {
+ #  description = "AWS Session Token"
+#}
 
 variable "aws_region" {
     description = "AWS Region"
