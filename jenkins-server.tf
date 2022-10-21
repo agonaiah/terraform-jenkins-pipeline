@@ -97,26 +97,3 @@ data "aws_iam_policy_document" "jenkins-main-access-doc" {
         ]
     }
 }
-
-resource "aws_iam_role" "jenkins-main-access-role" {
-    name               = "${var.prefix}-jenkins-access-role"
-    assume_role_policy = data.aws_iam_policy_document.jenkins-assume-role.json
-
-    tags = {
-        Owner = var.owner
-        Region = var.hc_region
-        Purpose = var.purpose
-        TTL = var.ttl
-    }
-}
-
-resource "aws_iam_role_policy" "jenkins-main-access-policy" {
-    name   = "${var.prefix}-jenkins-access-policy"
-    role   = aws_iam_role.jenkins-main-access-role.id
-    policy = data.aws_iam_policy_document.jenkins-main-access-doc.json
-}
-
-resource "aws_iam_instance_profile" "jenkins-main-profile" {
-    name = "${var.prefix}-jenkins-access-profile"
-    role = aws_iam_role.jenkins-main-access-role.name
-}
