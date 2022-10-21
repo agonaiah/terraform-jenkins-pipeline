@@ -2,7 +2,7 @@ resource "aws_instance" "jenkins-server" {
     ami = data.aws_ami.ubuntu.id
     instance_type = var.instance_type
     key_name = var.key_pair
-    iam_instance_profile = aws_iam_instance_profile.jenkins-main-profile.id
+    #iam_instance_profile = aws_iam_instance_profile.jenkins-main-profile.id
     vpc_security_group_ids = [aws_security_group.jenkins-server-sg.id]
     user_data = templatefile("${path.module}/scripts/jenkins-install.sh", {
         AWS_ACCESS_KEY = var.aws_access_key,
