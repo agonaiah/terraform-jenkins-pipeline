@@ -11,6 +11,7 @@ variable "aws_secret_key" {
 variable "aws_session_token" {
    description = "AWS Session Token"
     default = "FwoGZXIvYXdzEKz//////////wEaDC3eD1GukbT5/crzpSKoAauoXJuXMUu9mCGQg1v0V4bxj3aaW8wiIyqgHwSUwvAni0x9hLsPrXWFxhnpY6byLnUXAI2ETfKj/rCf1nimTaAv7cOVv5TaTMV9+BViG5+1gf/cKNv/NcsH2fd74LpKQQUkQna17+AlGmOhqaC8BGFkDgbK4kEkJUrAgzc/jtGeqha96WTyz4M6QmZDKbvDtyLbJoqjUfm8/vjfV8It4ix1A9gkDE6PSSjs5MmaBjItO+3NWTICnkbSsrtgPlSn9VR8WYPzHveFXPw+HoPB6xI4XrLJR8obFwzpESlV"
+}
 variable "aws_region" {
     description = "AWS Region"
     default = "us-east-1"
